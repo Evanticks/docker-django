@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'django_tutorial.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get("DJANGODB"),
-        'USER': os.environ.get('DJANGODB_USER'),
-        'PASSWORD': os.environ.get("DJANGODB_PASS"),
+        'NAME': os.environ.get("NAME"),
+        'USER': os.environ.get('DJANGODB_USUARIO'),
+        'PASSWORD': os.environ.get("DJANGODB_CONTRASENA"),
         'HOST': os.environ.get('DJANGODB_HOST'),
         'PORT': '3306',
     }
@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 
 CSRF_TRUSTED_ORIGINS = ['http://*.entrebytes.org','http://*.127.0.0.1','https://*.entrebytes.org','https://*.127.0.0.1']
 
-DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
